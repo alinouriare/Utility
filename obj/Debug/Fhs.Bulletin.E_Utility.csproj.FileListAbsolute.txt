@@ -1,0 +1,13 @@
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\Fhs.Bulletin.E_Utility.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\Fhs.Bulletin.E_Utility.pdb
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\MediaHandlerPro.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\Newtonsoft.Json.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\QRCoder.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\System.Security.Cryptography.Csp.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\bin\Debug\Newtonsoft.Json.xml
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\obj\Debug\Fhs.Bulletin.E_Utility.csproj.CoreCompileInputs.cache
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\obj\Debug\Fhs.Bulletin.E_Utility.dll
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\obj\Debug\Fhs.Bulletin.E_Utility.pdb
+C:\Prog\HoushmandSepehr\fhs_bulletin\Fhs.Bulletin.E_Utility\obj\Debug\Fhs.Bulletin.E_Utility.csprojResolveAssemblyReference.cache

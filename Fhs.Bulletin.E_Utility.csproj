@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29CC40AA-8586-41D5-A6E4-D9926B3C1F6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fhs.Bulletin.E_Utility</RootNamespace>
+    <AssemblyName>Fhs.Bulletin.E_Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MediaHandlerPro">
+      <HintPath>..\_Document\ExternalDLL\MediaHandlerPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>..\_Document\ExternalDLL\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Csp.4.0.0\lib\net46\System.Security.Cryptography.Csp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.0.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankUtility\Attributes\EnumCardFormat.cs" />
+    <Compile Include="BankUtility\Attributes\EnumShebaFormat.cs" />
+    <Compile Include="BankUtility\Enums\BankEnum.cs" />
+    <Compile Include="BankUtility\Enums\BillEnum.cs" />
+    <Compile Include="BankUtility\Enums\BillGetInformationTypeEnum.cs" />
+    <Compile Include="BankUtility\Enums\SaderatBillControlDigitModeEnum.cs" />
+    <Compile Include="BankUtility\HelperClass\BankEnumItem.cs" />
+    <Compile Include="BankUtility\HelperClass\BankEnumUtilities.cs" />
+    <Compile Include="BankUtility\HelperClass\EnumBankCollection.cs" />
+    <Compile Include="BankUtility\SaderatBillModel.cs" />
+    <Compile Include="BankUtility\StdBillModel.cs" />
+    <Compile Include="BankUtility\StdCardModel.cs" />
+    <Compile Include="BankUtility\StdShebaModel.cs" />
+    <Compile Include="CrawlUtility\Models\ImageLink.cs" />
+    <Compile Include="CrawlUtility\WebCrawlerUtilities.cs" />
+    <Compile Include="Encoding\HexadecimalEncoding.cs" />
+    <Compile Include="EncryptDecryptUtility\EncryptDecryptUtilities.cs" />
+    <Compile Include="EncryptDecryptUtility\HrmCryptographyCustom.cs" />
+    <Compile Include="EncryptDecryptUtility\Models\Blowfish.cs" />
+    <Compile Include="EncryptDecryptUtility\Models\TokenHelper.cs" />
+    <Compile Include="EnumUtility\Attribute\EnumDescription.cs" />
+    <Compile Include="EnumUtility\Attribute\EnumGroupAttribute.cs" />
+    <Compile Include="EnumUtility\Attribute\EnumParentValue.cs" />
+    <Compile Include="EnumUtility\Attribute\EnumPropertyTypeAttribute.cs" />
+    <Compile Include="EnumUtility\EnumItem.cs" />
+    <Compile Include="EnumUtility\EnumUtilities.cs" />
+    <Compile Include="HttpUtility\HttpManager.cs" />
+    <Compile Include="ImageUtility\Enums\WatermarkPositionEnum.cs" />
+    <Compile Include="ImageUtility\ImageUtilities.cs" />
+    <Compile Include="ImageUtility\Models\CropImageModel.cs" />
+    <Compile Include="ImageUtility\Models\RandomImage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicUtility\EmailUtilities.cs" />
+    <Compile Include="PublicUtility\Enums\PhoneOperatorTypeEnum.cs" />
+    <Compile Include="PublicUtility\HelperClass\RandomImage.cs" />
+    <Compile Include="PublicUtility\MimeAssistantUtilities.cs" />
+    <Compile Include="PublicUtility\PublicUtilities.cs" />
+    <Compile Include="SerializDeserializeUtility\SerializUtilities.cs" />
+    <Compile Include="VideoUtility\Enums\VideoEncodeEnum.cs" />
+    <Compile Include="VideoUtility\HelperClasses\MediaConfigPath.cs" />
+    <Compile Include="VideoUtility\HelperClasses\MediaConfigPathModel.cs" />
+    <Compile Include="VideoUtility\HelperClasses\MediaHandlerErrorHelper.cs" />
+    <Compile Include="VideoUtility\VideoUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
